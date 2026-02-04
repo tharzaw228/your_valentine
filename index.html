@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Nunito for a rounded, friendly look -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Floating Elements (Hearts) -->
+    <div class="background-hearts"></div>
+
+    <!-- PAGE 1: LANDING PAGE -->
+    <div id="landing-page" class="page active">
+        <!-- Random Background Images Container -->
+        <div id="random-images-container"></div>
+        
+        <div class="content-box">
+            <h1>Hey you… 💖</h1>
+            <p>Will you be my valentine??</p>
+            <p>Do you want to see what I made for you?</p>
+            <div class="buttons-container">
+                <button id="yes-btn" class="btn-primary">Yes! 💖</button>
+                <button id="no-btn" class="btn-secondary">No 😢</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 2: PASSWORD PAGE -->
+    <div id="password-page" class="page hidden">
+        <div class="content-box">
+            <h2>One small question... 🔐</h2>
+            <p>When is our anniversary?</p>
+            <input type="text" id="password-input" class="password-input" placeholder="DDMM" maxlength="4">
+            <button id="password-submit-btn" class="btn-primary">Unlock 🔓</button>
+            <p id="error-message" class="error-message hidden">Oops! Try again 🙈</p>
+        </div>
+    </div>
+
+    <!-- PAGE 3: STICKER SELECTION -->
+    <div id="selection-page" class="page hidden">
+        <h2>Choose a sticker 💕</h2>
+        <div class="sticker-grid">
+            <div class="sticker" data-id="bear">
+                <div class="sticker-content">🧸</div>
+            </div>
+            <div class="sticker" data-id="letter">
+                <div class="sticker-content">💌</div>
+            </div>
+            <div class="sticker" data-id="flower">
+                <div class="sticker-content">🌸</div>
+            </div>
+            <div class="sticker" data-id="cat">
+                <div class="sticker-content">🐱</div>
+            </div>
+            <div class="sticker" data-id="heart">
+                <div class="sticker-content">💖</div>
+            </div>
+        </div>
+        <button id="next-btn" class="btn-primary" style="margin-top: 30px;">Continue ➡️</button>
+    </div>
+
+    <!-- PAGE 4: MESSAGE REVEAL -->
+    <div id="message-page" class="page hidden">
+        <div class="message-card">
+            <div id="message-icon" class="message-icon"></div>
+            <p id="message-text" class="message-text"></p>
+            <button id="back-btn" class="btn-secondary">Choose another</button>
+        </div>
+    </div>
+
+    <!-- PAGE 5: FINAL PAGE -->
+    <div id="final-page" class="page hidden">
+        <div class="content-box">
+            <h2>For us... 💑</h2>
+            <div class="media-container">
+                <!-- Lovely Image -->
+                <img src="https://pixabay.com/get/g4f2c2dd9bbb85e655db1e970ef7c30fb7ca080dca11b269fbe38ca23e2d93f6683fd35d764484224b0faeef83592e3e2a03b412259cf03da791a371b009d0614_1280.png" alt="Lovely Couple" class="lovely-image">
+                
+                <!-- Video Placeholder -->
+                <div class="video-wrapper">
+                    <p>🎥 Our Video</p>
+                    <!-- Replace 'sample.mp4' with your actual video file -->
+                    <video controls loop class="lovely-video">
+                        <source src="sample.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <p>I love you more than words can say. 💖</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
